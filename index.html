@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rancid-O-Meter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Patrick+Hand&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+  <body>
+    <audio id="audioPlayer"></audio>
+    <div class="main-container">
+        <div class="meter-wrapper">
+          <div class="meter-body">
+            <div class="top-section">
+              <div class="screen">
+                <img src="images/img1.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+              </div>
+              <div class="mrz-text">MrZ</div>
+            </div>
+            <div class="controls">
+              <div class="label">
+                <span>R</span><span>A</span><span>N</span><span>C</span><span>I</span><span>D</span><span>-</span><span>O</span><span>-</span><span>M</span><span>E</span><span>T</span><span>E</span><span>R</span>
+              </div>
+              <button class="skip-button">SKIP</button>
+              <!-- Updated Slider Area -->
+              <div class="slider-area">
+                <div class="slider-container">
+                  <input type="range" min="1" max="100" value="50" class="slider" />
+                </div>
+                <div class="slider-labels">
+                  <span>Low</span>
+                  <span>Medium</span>
+                  <span>High</span>
+                </div>
+              </div>
+              <div class="play-pause-container">
+                <button id="playBtn">PLAY</button>
+                <button id="pauseBtn">PAUSE</button>
+              </div>
+              <div class="doomer-mode-container">
+                <span>Doomer Mode</span>
+                <label class="toggle-switch">
+                  <input type="checkbox" id="doomerToggle" />
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+            
+        </div>
+        <button id="infoBtn">
+            <i class="fa fa-info-circle"></i> Information
+        </button>
+        <div class="foot left"></div>
+            <div class="foot right"></div>
+    </div>
+
+    <!-- Information Modal Popup -->
+    <div class="modal-overlay" id="infoModalOverlay">
+      <div class="info-modal">
+        <div class="modal-header">
+          <h2 id="modalTitle">Track Information</h2>
+          <button class="close-btn" id="closeInfoModal">&times;</button>
+        </div>
+        <div class="modal-content">
+          <h3 id="modalPlaying">Now Playing:</h3>
+          <p><strong id="modalTrack">Track:</strong></p>
+          <p><strong id="modalArtist">Artist:</strong></p>
+          <p><strong id="modalMood">Mood:</strong></p>
+        </div>
+      </div>
+    </div>
+   <script src="js/script.js"></script>
+  </body>
+</html>

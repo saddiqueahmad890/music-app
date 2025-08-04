@@ -1,5 +1,48 @@
-Project Files for Audio Player Website Using HTML
+🎵 Mood Music Player (Frontend Only)
+------------------------------------
 
-Thank you for checking out this project! If you found it helpful, feel free to share it with others who might benefit from it.
+This is a simple **frontend-based web music player** that plays audio tracks and background videos based on your selected mood level (Low, Medium, High). It also includes a “Doomer” theme toggle.
 
-Your support is greatly appreciated!
+Features:
+- Audio and video playback based on mood level (Low / Medium / High)
+- Play, Pause, and Skip functionality
+- Doomer theme toggle
+- Track information modal popup (shows track name, artist, mood)
+- Responsive design
+
+ Folder Structure:
+- `index.html`         – Main HTML file
+- `style.css`          – Stylesheet
+- `script.js`          – All frontend logic (JavaScript)
+- `music/`             – Audio files for normal mode (subfolders: low/, medium/, high/)
+- `music_doomer/`      – Audio files for Doomer mode (subfolders: low/, medium/, high/)
+- `videos/`            – Background videos for each mood level
+
+⬇ How to Download and Use:
+
+1. **Clone or Download the Repository**  
+   - If using Git:  
+     ```bash
+     git clone https://github.com/saddiqueahmad890/music-appme.git
+     ```
+   - Or download the ZIP file and extract it.
+
+2. **Run the Project**  
+   - Simply open `index.html` in any modern web browser (e.g., Chrome, Firefox, Edge).
+   - Make sure the folder structure stays intact (especially `music/`, `music_doomer/`, and `videos/`).
+
+3. **Using the App**  
+   - Use the slider to set the mood level.
+   - Toggle "Doomer" mode on or off.
+   - Click **Play** to start the music and background video.
+   - Use **Pause** and **Skip** as needed.
+   - Click the **Info** button to view details about the current track.
+
+🚫 Requirements:
+- No server or backend required.
+- No external libraries or frameworks needed.
+- Works offline (as long as media files are in place).
+
+👨‍💻 Note:
+This project is **purely frontend** – built using HTML, CSS, and JavaScript. It is ideal for demo purposes, personal projects, or as a starting point for music-themed web apps.
+
